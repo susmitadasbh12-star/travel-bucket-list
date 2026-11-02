@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5eee8;
+    font-family: Arial, sans-serif;
+    color: #49352f;
+}
+
+   /* TOP HEADING / HERO */
+
+header {
+    margin: 20px 25px;
+    padding: 28px;
+    background: linear-gradient(120deg, #d8b4a0, #f0dfd3);
+    border-radius: 12px;
+    box-shadow: 0 5px 12px #0000001f;
+}
+
+header h1 {
+    color: #49352f;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #89675a;
+    font-size: 17px;
+}
+
+   /* FILTER SECTION */
+
+main {
+    margin: 25px;
+    padding: 25px;
+    background-color: #e8d5c8;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px #0000001f;
+    position: sticky;
+    
+}
+.box1 {
+    padding: 10px;
+}
+
+.box11 {
+    margin: 10px 5px 25px;
+    padding: 5px;
+}
+
+.box11 h1 {
+    color: #49352f;
+    font-size: 30px;
+}
+
+/* CATEGORY BUTTONS */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0 30px;
+}
+
+.nav button {
+    margin: 0;
+    padding: 11px 22px;
+    border-radius: 50px;
+    border: 1px solid #d0b6a7;
+    background-color: #faf5f0;
+    color: #49352f;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px #0000000f;
+}
+
+.nav button:hover {
+    background-color: #b98270;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px #0000001f;
+}
+
+/* COUNTRY DROPDOWN */
+
+.box12 {
+    margin: 20px 5px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #49352f;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav1 {
+    padding: 0;
+    min-width: 190px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#Countries {
+    width: 220px;
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #49352f;
+    background-color: #faf5f0;
+    border: 1px solid #d0b6a7;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#Countries:hover,
+#Countries:focus {
+    border-color: #b98270;
+    box-shadow: 0 0 0 3px #b9827026;
+}
+
+/* section 1*/
+
+/* Destination Section */
+
+.destinations {
+    padding: 70px 7%;
+    background: #f8f9fc;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading span,
+.about-content span {
+    color: #2a9d8f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #243b53;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* SEARCH BOX  */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto 45px;
+    background: white;
+    border-radius: 40px;
+    padding: 7px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.search-box button {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #2a9d8f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #217d73;
+}
+
+
+/* DESTINATION GRID */
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* DESTINATION CARD */
+
+.destination-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.35s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.location {
+    display: inline-block;
+    color: #2a9d8f;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-content h3 {
+    font-size: 23px;
+    color: #243b53;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.visit-btn {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #243b53;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #2a9d8f;
+}
+
+
+/* NO RESULTS */
+
+#no-results {
+    text-align: center;
+    color: #777;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    padding: 90px 10%;
+    background: #eaf5f3;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #243b53;
+    margin: 15px 0;
+}
+
+.about-content p {
+    color: #667;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #2a9d8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background: #217d73;
+    transform: translateY(-3px);
+}
+
+
+/* NEWSLETTER SECTION */
+
+.newsletter {
+    padding: 65px 20px;
+    text-align: center;
+    background: #243b53;
+    color: white;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.newsletter p {
+    font-size: 15px;
+    color: #dce5ed;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #172b3d;
+    color: white;
+    text-align: center;
+    padding: 45px 20px 20px;
+}
+
+.footer-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #cbd5df;
+    font-size: 14px;
+}
+
+.social-links {
+    margin: 22px 0;
+}
+
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 7px;
+    background: #2a9d8f;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: white;
+    color: #243b53;
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #b8c5d1;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+
+    .destination-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 25px 5%;
+    }
+
+    .box1 {
+        padding: 22px 16px;
+    }
+
+    .box11 h1 {
+        font-size: 24px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    #Countries {
+        width: 100%;
+    }
+
+    .destinations {
+        padding: 50px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card img {
+        height: 220px;
+    }
+
+    .search-box {
+        border-radius: 15px;
+    }
+
+    .search-box input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .search-box button {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .about {
+        padding: 60px 7%;
+    }
+
+    .about-content h2 {
+        font-size: 27px;
+    }
+
+    .newsletter h2 {
+        font-size: 24px;
+    }
+
+}
