@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+</head>
+
+<body>
+    <!-- <section 1> -->
+    <main>
+        <h1> Built your ideal travel list</h1>
+        <div class="box0">
+            <p> Browse / Pick Print or Save(as PDF) your list</p>
+        </div>
+    </main>
+    <div class="box1">
+        <div class="box11">
+            <h1>Filters</h1>
+        </div>
+        <div class="nav">
+            <div class="nav">
+
+                <button class="category-btn" data-category="Nature">Nature</button>
+                <button class="category-btn" data-category="History">History</button>
+                <button class="category-btn" data-category="Famous Landmark">Famous Landmark</button>
+                <button class="category-btn" data-category="Wildlife">Wildlife</button>
+                <button class="category-btn" data-category="Buildings">Buildings</button>
+                <button class="category-btn" data-category="Festivals">Festivals</button>
+                <button class="category-btn" data-category="Experience">Experience</button>
+
+            </div>
+        </div>
+        <div class="box12">
+
+            Show me items from
+
+            <div class="nav1">
+
+                <select name="Countries" id="countries">
+                    <option value="all">All Countries</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="England">England</option>
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Germany">Germany</option>
+
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <!-- <section 1> -->
+
+    <!-- <section 2> -->
+    <!-- Explore Destinations Section -->
+    <section class="destinations" id="destinations">
+
+        <div class="section-heading">
+            <span>YOUR NEXT ADVENTURE</span>
+            <h2>Explore The World</h2>
+            <p>Discover amazing places and add your favourite destinations to your bucket list.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search for a destination...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+        </div>
+
+        <!-- Destination Cards -->
+        <div class="destination-container" id="destination-container">
+
+            <!-- South Korea -->
+            <div class="destination-card" data-category="Nature" data-country="SouthKorea">
+
+                <img src="./Document_files/photo-1538485399081-7191377e8241" alt="South Korea">
+
+                <div class="card-content">
+                    <span class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        South Korea
+                    </span>
+
+                    <h3>Seoul</h3>
+                    <p>Explore beautiful streets, culture and modern city life.</p>
+
+                    <button class="visit-btn">Explore More</button>
+                </div>
+            </div>
+
+
+            <!-- England -->
+            <div class="destination-card" data-category="Famous Landmark" data-country="England">
+
+                <img src="./Document_files/photo-1513635269975-59663e0ac1ad" alt="London">
+
+                <div class="card-content">
+                    <span class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        England
+                    </span>
+
+                    <h3>London</h3>
+                    <p>Discover iconic landmarks and the beauty of London.</p>
+
+                    <button class="visit-btn">Explore More</button>
+                </div>
+            </div>
+
+
+            <!-- India -->
+            <div class="destination-card" data-category="History" data-country="India">
+
+                <img src="./Document_files/photo-1564507592333-c60657eea523" alt="Taj Mahal">
+
+                <div class="card-content">
+                    <span class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        India
+                    </span>
+
+                    <h3>Taj Mahal</h3>
+                    <p>Experience the beauty of India's historical architecture.</p>
+
+                    <button class="visit-btn">Explore More</button>
+                </div>
+            </div>
+
+
+            <!-- France -->
+            <div class="destination-card" data-category="Famous Landmark" data-country="France">
+
+                <img src="./Document_files/photo-1502602898657-3e91760cbb34" alt="Paris">
+
+                <div class="card-content">
+                    <span class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        France
+                    </span>
+
+                    <h3>Paris</h3>
+                    <p>Explore romantic streets and world-famous landmarks.</p>
+
+                    <button class="visit-btn">Explore More</button>
+                </div>
+            </div>
+
+
+            <!-- Italy -->
+            <div class="destination-card" data-category="History" data-country="Italy">
+
+                <img src="./Document_files/photo-1516483638261-f4dbaf036963" alt="Italy">
+
+                <div class="card-content">
+                    <span class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Italy
+                    </span>
+
+                    <h3>Venice</h3>
+                    <p>Discover beautiful canals and historical architecture.</p>
+
+                    <button class="visit-btn">Explore More</button>
+                </div>
+            </div>
+
+
+            <!-- Germany -->
+            <div class="destination-card" data-category="Buildings" data-country="Germany">
+
+                <img src="./Document_files/photo-1560969184-10fe8719e047" alt="Germany">
+
+                <div class="card-content">
+                    <span class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Germany
+                    </span>
+
+                    <h3>Berlin</h3>
+                    <p>Explore historic buildings and modern city attractions.</p>
+
+                    <button class="visit-btn">Explore More</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- No Results Message -->
+        <p id="no-results" style="display: none;">
+            No destinations found!
+        </p>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+            <span>ABOUT US</span>
+
+            <h2>Every Journey Begins With A Dream</h2>
+
+            <p>
+                Travel Bucket List is a place where you can discover
+                beautiful destinations, explore different cultures
+                and collect your dream travel experiences.
+                Start exploring the world and make your travel dreams
+                a reality!
+            </p>
+
+            <a href="http://127.0.0.1:5500/project.html#destinations" class="about-btn">
+                Start Exploring
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+
+        <h2>Ready For Your Next Adventure?</h2>
+
+        <p>Keep dreaming, keep exploring and never stop travelling.</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>Travel Bucket List</h2>
+
+            <p>Explore the world. Discover your dreams.</p>
+
+            <div class="social-links">
+                <a href="http://127.0.0.1:5500/project.html#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://127.0.0.1:5500/project.html#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://127.0.0.1:5500/project.html#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+
+
+
+
+            <script src="./Document_files/Script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div></footer></body></html>
